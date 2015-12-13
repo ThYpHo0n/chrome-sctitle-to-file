@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Soundcloud track info to file",
+  "description": "This app saves the current track title from Soundcloud to a file.",
+  "version": "2",
+  "minimum_chrome_version": "48",
+  "icons": {
+    "16": "icon_16.png"
+  },
+  "permissions": [{"fileSystem": ["write", "directory"]}],
+  "app": {
+    "background": {
+      "scripts": ["main.js"]
+    }
+  }
+}

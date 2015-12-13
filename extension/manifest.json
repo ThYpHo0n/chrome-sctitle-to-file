@@ -1,0 +1,16 @@
+{
+  "name": "Soundcloud track title to file extension",
+  "version": "1.0.0",
+  "description": "This extension is looking for open Soundcloud tabs and reads their current track title and sends it to the app.",
+  "browser_action": {
+    "default_title": "Soundcloud current track to file",
+    "default_icon": "icon_16.png",
+    "default_popup": "index.html"
+  },
+  "background": {
+    "scripts": ["eventPage.js"],
+    "persistent": true
+  },
+  "permissions": ["notifications", "tabs"],
+  "manifest_version": 2
+}
