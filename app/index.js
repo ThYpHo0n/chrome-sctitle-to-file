@@ -32,7 +32,9 @@
 
     var saveToFile = function (title) {
         title = title.trim();
-        title = title.substr(0, title.indexOf("by")-1);
+        if(title.indexOf("by") > 0) {
+            title = title.substr(0, title.indexOf("by")-1);
+        }
         if(title.length > 5) {
             save("C:\\Users\\ThYpHoOn\\Documents\\OBS\\soundcloud.txt", title);
         }
